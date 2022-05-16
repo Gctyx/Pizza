@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #131313;
+    background-image: url("/img/background-pizza.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header{
+    background-color: rgba(0,0,0,0.5);
+    height: 110px;
+    padding: 30px 75px 0 75px;
+  }
+  h1, footer a{
+    height: 70px;
+    width: 300px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url("/img/logo-helloPizza.png") 0 0 no-repeat;
+    display: block;
+  }
+  
+  h2{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    /* float: left; */
+    margin: 50px 45%;
+  }
+  section{
+    clear: both;
+    padding: 30px 70px 0 70px;
+    position: relative;
+    margin: 0 0 50px 0;
+  }
+  
+  img#pizza-sabores{
+    display: block;
+    clear: both;
+    margin: 0 10%;
+  }
+  nav{
+    float: right;
+    margin-top: -30px;
+  }
+  
+  nav ul{
+    list-style: none;
+    display: block;
+  }
+  
+  nav ul li{
+    float: left;
+    margin: 0 50px;
+  }
+  
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  ul#vantagens{
+    list-style: none;
+    float: left;
+    margin: 30px 0 150px 0;
+  }
+  
+  ul#vantagens li{
+    font-family: 'Reenie Beanie', cursive;
+    color: #fff;
+    font-size: 2.75em;
+    margin: 5px;
+  }
+  
+  ul#vantagens li::before {
+    content: "\00b0 ";
+    color: #fbcb39;
+    font-family: sans-serif;
+    font-size: 1em;
+    vertical-align: bottom;
+    margin: 25px 10px 0 10px;
+  }
+  footer a{
+    width: 200px;
+    background-size: 200px 45px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+  }
+  footer p{
+    text-align: center;
+  }
+  /*---------- CARDAPIO------------*/
+.cardapio__container {
+    padding: 1rem 4rem;
+}
+
+.card {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-top: var(--mb-4);
+    margin-bottom: var(--mb-4);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+}
+
+.card__data {
+    height: 6rem;
+}
+
+.card__data h3 {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-left: var(--mb-2);
+}
+
+.card__data .card__descripition {
+    margin-left: var(--mb-2);
+}
+
+.card__data small {
+    font-weight: var(--font-light);
+    font-size: var(--normal-font-size);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+}
+
+.card__preci {
+    margin-top: var(--mb-3);
+}
+
+.card__preci span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    background-color: var(--first-color);
+    border-radius: 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card__cart:hover {
+    background-color: var(--first-color_alt);
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">  
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Reenie+Beanie|Roboto:400,500,500i" rel="stylesheet">
+  <title>HelloPizzaria</title>
+</head>
+
+<body>
+  <header>
+    <h1>Hello Pizza</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sabores.html">Sabores</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section>
+    <ul id="vantagens">
+      <li>Qualidade</li>
+      <li>Sabor</li>
+      <li>Praticidade</li>
+      <li>Agilidade</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sabores</h2>
+    <p>Conheça os nossos <strong>6 sabores</strong> de pizza!</p>
+    <img src="img/sabores-pizzas.png" id="pizza-sabores" />
+  </section>
+
+  <section>
+    <h2>Especificações</h2>
+    
+      <table>
+        <thead>
+          <tr>
+            <th>Sabor</th>
+            <th>Ingredientes</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="item">
+            <td>Calabresa</td>
+            <td>
+              <p>Molho de tomate, queijo, calabresa, cebola, azeitonas e oregano</p>
+            </td>
+          </tr>
+
+          <tr class="item">
+            <td>Mussarela</td>
+            <td>
+              <p>Molho de tomate, queijo, tomate e azeitonas</p>
+            </td>
+          </tr>
+
+          <tr class="item">
+            <td>Pepperoni</td>
+            <td>
+              <p>Molho de tomate, queijo e pepperoni</p>
+            </td>
+          </tr>
+
+          <tr class="item">
+            <td>Marguerita</td>
+            <td>
+              <p>Molho de tomate, queijo, tomate, manjericão e azeitonas </p>
+            </td>
+          </tr>
+
+          <tr class="item">
+            <td>Portuguesa</td>
+            <td>
+              <p>Molho de tomate, queijo, presunto, tomate, ovo, cebola, azeitona, oregano e tempero verde</p>
+            </td>
+          </tr>
+
+          <tr class="item">
+            <td>Alho</td>
+            <td>
+              <p>Molho de tomate, queijo, atum e catupiry. </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+
+  <!-- Pedido -->
+  <section>
+    <h2>Pedido</h2>
+    <form name="pedido" action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="post">
+      <table>
+        <thead>
+          <tr>
+            <th>Sabor</th>
+            <th>Quantidade</th>
+            <th>Preço Unitário - R$</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="item">
+            <td>Calabresa</td>
+            <td>
+              <a class="btn-decrementa">-</a>
+              <input max="9" class="quantidade" value="0" type="number" name="calabresa">
+              <a class="btn-incrementa">+</a>
+            </td>
+            <td class="preco-item">30.00</td>
+          </tr>
+
+          <tr class="item">
+            <td>Mussarela</td>
+            <td>
+              <a class="btn-decrementa">-</a>
+              <input max="9" class="quantidade" value="0" type="number" name="mussarela">
+              <a class="btn-incrementa">+</a>
+            </td>
+            <td class="preco-item">30.00</td>
+          </tr>
+
+          <tr class="item">
+            <td>Pepperoni</td>
+            <td>
+              <a class="btn-decrementa">-</a>
+              <input max="9" class="quantidade" value="0" type="number" name="pepperoni">
+              <a class="btn-incrementa">+</a>
+            </td>
+            <td class="preco-item">60.00</td>
+          </tr>
+
+          <tr class="item">
+            <td>Marguerita</td>
+            <td>
+              <a class="btn-decrementa">-</a>
+              <input max="9" class="quantidade" value="0" type="number" name="marguerita">
+              <a class="btn-incrementa">+</a>
+            </td>
+            <td class="preco-item">40.00</td>
+          </tr>
+
+          <tr class="item">
+            <td>Portuguesa</td>
+            <td>
+              <a class="btn-decrementa">-</a>
+              <input max="9" class="quantidade" value="0" type="number" name="portuguesa">
+              <a class="btn-incrementa">+</a>
+            </td>
+            <td class="preco-item">60.00</td>
+          </tr>
+
+          <tr class="item">
+            <td>Alho</td>
+            <td>
+              <a class="btn-decrementa">-</a>
+              <input max="9" class="quantidade" value="0" type="number" name="alho">
+              <a class="btn-incrementa">+</a>
+            </td>
+            <td class="preco-item">30.00</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="2">Total R$</td>
+            <td id="total">0</td>
+          </tr>
+        </tfoot>
+      </table>
+      <input type="submit" value="Enviar" />
+    </form>
+  </section>
+
+  <footer>
+    <a href="index.html" id="logo-hellopizza">Hello Pizza</a>
+    <p>Todos os direitos reservados Hello Pizza&copy; Desde 2000</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
